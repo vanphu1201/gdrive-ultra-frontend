@@ -21,7 +21,7 @@
 
 <br/>
 
-[🌐 Xem Demo Live](https://though-definitely-seem-log.trycloudflare.com) &nbsp;·&nbsp; [📋 Tài liệu Kỹ thuật](#-kiến-trúc-hệ-thống) &nbsp;·&nbsp; [🔒 Giải pháp Bảo mật](#-bảo-mật--security)
+[🌐 Xem website](https://though-definitely-seem-log.trycloudflare.com) &nbsp;·&nbsp; [📋 Tài liệu Kỹ thuật](#-kiến-trúc-hệ-thống) &nbsp;·&nbsp; [🔒 Giải pháp Bảo mật](#-bảo-mật--security)
 
 <br/>
 
