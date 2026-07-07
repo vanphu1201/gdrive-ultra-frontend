@@ -1,0 +1,7 @@
+{
+  "css.validate": false,
+  "tailwindCSS.experimental.configFile": null,
+  "files.exclude": {
+    "**/node_modules_old": true
+  }
+}

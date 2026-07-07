@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-outfit), var(--font-geist-sans), sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --background: #090d16; /* Clean deep slate-blue background */
+  --foreground: #f8fafc; /* slate-50 */
+  --card: rgba(15, 23, 42, 0.65); /* Slate card with transparency */
+  --card-foreground: #f1f5f9; /* slate-100 */
+  --popover: rgba(15, 23, 42, 0.9);
+  --popover-foreground: #f8fafc;
+  --primary: #4f46e5; /* Indigo-600 */
+  --primary-foreground: #ffffff;
+  --secondary: #1e293b; /* slate-800 */
+  --secondary-foreground: #f1f5f9;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8; /* slate-400 */
+  --accent: #2e3c56;
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: rgba(255, 255, 255, 0.08);
+  --input: rgba(15, 23, 42, 0.8);
+  --ring: #6366f1; /* Indigo-500 */
+  --radius: 1.25rem;
+}
+
+.dark {
+  --background: #090d16;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    background-image: 
+      radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.08), transparent 35%),
+      radial-gradient(circle at 90% 80%, rgba(59, 130, 246, 0.08), transparent 35%);
+    background-attachment: fixed;
+  }
+  
+  /* Premium glass panel utility */
+  .glass {
+    @apply backdrop-blur-xl border border-white/5 shadow-2xl;
+    background: rgba(13, 20, 38, 0.55);
+  }
+}
